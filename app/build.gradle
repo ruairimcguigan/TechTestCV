@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration["androidCompileSdkVersion"]
+    buildToolsVersion globalConfiguration["androidBuildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion globalConfiguration["androidMinSdkVersion"]
+        targetSdkVersion globalConfiguration["androidTargetSdkVersion"]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    kapt {
+        generateStubs = true
+    }
+}
+
+dependencies {
+    def appDependencies = rootProject.ext.appUiDependencies
+    def appTestDependencies = rootProject.ext.appTestDependencies
+
+    // libs
+    implementation appDependencies.kotlin
+    implementation appDependencies.constraintLayout
+    implementation appDependencies.javaxAnnotation
+    implementation appDependencies.androidAnnotations
+    implementation appDependencies.javaxInject
+    implementation appDependencies.rxAndroid
+    implementation appDependencies.rxKotlin
+    implementation appDependencies.appCompat
+    implementation appDependencies.materialDesign
+    implementation appDependencies.timber
+    implementation appDependencies.glide
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    compileOnly appDependencies.glassfishAnnotation
+
+    // dep injection
+    implementation appDependencies.dagger
+    implementation appDependencies.daggerSupport
+    kapt appDependencies.daggerCompiler
+    implementation appDependencies.daggerAndroid
+    kapt appDependencies.daggerProcessor
+
+
+    // arch components
+    implementation appDependencies.archRuntime
+    implementation appDependencies.archExtensions
+    annotationProcessor appDependencies.archCompiler
+
+    // test libs
+    testImplementation appTestDependencies.kotlinJUnit
+    androidTestImplementation appTestDependencies.junit
+    androidTestImplementation appTestDependencies.mockito
+    androidTestImplementation appTestDependencies.mockitoAndroid
+
+    androidTestImplementation(appTestDependencies.androidRunner) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation(appTestDependencies.androidRules) {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    kaptTest appDependencies.daggerCompiler
+    kaptAndroidTest appDependencies.daggerCompiler
+}
