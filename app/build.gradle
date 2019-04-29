@@ -23,7 +23,7 @@ android {
 
     flavorDimensions "api"
     productFlavors {
-        offline {
+        stub {
             dimension "api"
         }
         live {
