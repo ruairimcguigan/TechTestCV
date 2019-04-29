@@ -52,9 +52,12 @@ dependencies {
     implementation appDependencies.materialDesign
     implementation appDependencies.timber
     implementation appDependencies.glide
-    implementation appDependencies.retrofitRxAdapter
     implementation appDependencies.okhttp
     implementation appDependencies.androidXLegacy
+    implementation appDependencies.moshi
+    implementation appDependencies.moshiConverter
+    implementation appDependencies.moshiCodegen
+    implementation appDependencies.retrofitLiveAdapter
     compileOnly appDependencies.glassfishAnnotation
 
     // dep injection

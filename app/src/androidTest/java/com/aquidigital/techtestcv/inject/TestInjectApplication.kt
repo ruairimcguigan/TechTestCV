@@ -5,7 +5,6 @@ import com.aquidigital.techtestcv.StubInterceptor
 import com.aquidigital.techtestcv.api.ApiConfig
 import dagger.android.AndroidInjector
 import java.util.Arrays.asList
-//import com.aquidigital.techtestcv.s
 
 class TestInjectApplication : BaseApplication() {
 

@@ -19,7 +19,8 @@ ext {
     daggerVersion = '2.16'
     retrofitVersion = '2.3.0'
     okHttpVersion = '3.8.1'
-    gsonVersion = '2.8.5'
+    moshiVersion = '1.8.0'
+    moshiConverterVersion = '2.4.0'
     retrofitVersion = '2.4.0'
     supportLibraryVersion = '26.1.0'
     timberVersion = '4.7.1'
@@ -32,7 +33,7 @@ ext {
     archComponents = '2.1.0-alpha04'
     jetpackKotlinVersion = '1.1.0-alpha05'
     okhttpVersion = "3.10.0"
-    retrofitRxAdapterVersion = "2.5.0"
+    retrofitLiveAdapterVersion = "1.1.2"
     androidXLegacyVersion = "1.0.0"
 
     // Testing
@@ -74,8 +75,11 @@ ext {
             kotlinExt:                  "androidx.core:core-ktx:${jetpackKotlinVersion}",
             glassfishAnnotation:        "org.glassfish:javax.annotation:${glassfishAnnotationVersion}",
             okhttp:                     "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
-            retrofitRxAdapter:          "com.squareup.retrofit2:adapter-rxjava2:${retrofitRxAdapterVersion}",
-            androidXLegacy:             "androidx.legacy:legacy-support-v4:${androidXLegacyVersion}"
+            retrofitLiveAdapter:        "com.github.leonardoxh:retrofit2-livedata-adapter:${retrofitLiveAdapterVersion}",
+            androidXLegacy:             "androidx.legacy:legacy-support-v4:${androidXLegacyVersion}",
+            moshiCodegen:               "com.squareup.moshi:moshi-kotlin-codegen:${moshiVersion}",
+            moshi:                      "com.squareup.moshi:moshi:${moshiVersion}",
+            moshiConverter:             "com.squareup.retrofit2:converter-moshi:${moshiConverterVersion}"
     ]
 
     appTestDependencies = [
@@ -89,6 +93,6 @@ ext {
             androidRunner:              "androidx.test:runner:1.1.0",
             androidRules:               "androidx.test:rules:1.1.0",
             espressoCore:               "com.android.support.test.espresso:espresso-core:${espressoVersion}",
-            androidTestImplementation:   "androidx.test.ext:junit:1.1.0"
+            androidTestImplementation:  "androidx.test.ext:junit:1.1.0"
     ]
 }
