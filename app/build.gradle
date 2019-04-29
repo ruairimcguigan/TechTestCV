@@ -20,6 +20,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "api"
+    productFlavors {
+        offline {
+            dimension "api"
+        }
+        live {
+            dimension "api"
+        }
+    }
+
     kapt {
         generateStubs = true
     }
@@ -41,7 +52,9 @@ dependencies {
     implementation appDependencies.materialDesign
     implementation appDependencies.timber
     implementation appDependencies.glide
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation appDependencies.retrofitRxAdapter
+    implementation appDependencies.okhttp
+    implementation appDependencies.androidXLegacy
     compileOnly appDependencies.glassfishAnnotation
 
     // dep injection
@@ -72,4 +85,5 @@ dependencies {
 
     kaptTest appDependencies.daggerCompiler
     kaptAndroidTest appDependencies.daggerCompiler
+
 }

@@ -31,6 +31,9 @@ ext {
     materialDesignVersion = '1.0.0'
     archComponents = '2.1.0-alpha04'
     jetpackKotlinVersion = '1.1.0-alpha05'
+    okhttpVersion = "3.10.0"
+    retrofitRxAdapterVersion = "2.5.0"
+    androidXLegacyVersion = "1.0.0"
 
     // Testing
     jUnitVersion = '4.13-beta-2'
@@ -70,6 +73,9 @@ ext {
             archViewmodel:          "androidx.lifecycle:lifecycle-viewmodel-ktx:${archComponents}",
             kotlinExt:              "androidx.core:core-ktx:${jetpackKotlinVersion}",
             glassfishAnnotation:    "org.glassfish:javax.annotation:${glassfishAnnotationVersion}",
+            okhttp:                 "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            retrofitRxAdapter:      "com.squareup.retrofit2:adapter-rxjava2:${retrofitRxAdapterVersion}",
+            androidXLegacy:         "androidx.legacy:legacy-support-v4:${androidXLegacyVersion}"
     ]
 
     appTestDependencies = [
