@@ -5,4 +5,9 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="api_url">https://api.myjson.com/</string>
+
+    <string name="cv_xp">Experience</string>
+    <string name="cv_users_reached">App Installs</string>
+    <string name="cv_job_history">Employment History</string>
+    <string name="cv_error_body">CV could not be loaded.</string>
 </resources>

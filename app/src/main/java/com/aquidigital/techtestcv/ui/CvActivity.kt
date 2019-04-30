@@ -5,12 +5,8 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import com.aquidigital.techtestcv.R
-import kotlinx.android.synthetic.main.activity_fullscreen.*
+import kotlinx.android.synthetic.main.activity_cv.*
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
 class CvActivity : AppCompatActivity() {
     private val mHideHandler = Handler()
     private val mHidePart2Runnable = Runnable {
@@ -49,7 +45,7 @@ class CvActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_fullscreen)
+        setContentView(R.layout.activity_cv)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         mVisible = true
