@@ -5,6 +5,5 @@ import androidx.lifecycle.ViewModel
 import javax.inject.Inject
 
 class CvViewModel
-@Inject constructor(application: Application)
-    : ViewModel() {
+@Inject constructor(application: Application) : ViewModel() {
 }
