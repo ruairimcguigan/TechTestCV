@@ -35,6 +35,8 @@ ext {
     okhttpVersion = "3.10.0"
     retrofitLiveAdapterVersion = "1.1.2"
     androidXLegacyVersion = "1.0.0"
+    caligraphyVersion = "3.1.1"
+    viewPumpVersion = "1.0.0"
 
     // Testing
     jUnitVersion = '4.13-beta-2'
@@ -79,7 +81,9 @@ ext {
             androidXLegacy:             "androidx.legacy:legacy-support-v4:${androidXLegacyVersion}",
             moshiCodegen:               "com.squareup.moshi:moshi-kotlin-codegen:${moshiVersion}",
             moshi:                      "com.squareup.moshi:moshi:${moshiVersion}",
-            moshiConverter:             "com.squareup.retrofit2:converter-moshi:${moshiConverterVersion}"
+            moshiConverter:             "com.squareup.retrofit2:converter-moshi:${moshiConverterVersion}",
+            calligraphy:                "io.github.inflationx:calligraphy3:${caligraphyVersion}",
+            viewPump:                   "io.github.inflationx:viewpump:${viewPumpVersion}"
     ]
 
     appTestDependencies = [

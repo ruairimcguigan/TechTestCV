@@ -56,8 +56,10 @@ dependencies {
     implementation appDependencies.androidXLegacy
     implementation appDependencies.moshi
     implementation appDependencies.moshiConverter
-    implementation appDependencies.moshiCodegen
+    annotationProcessor appDependencies.moshiCodegen
     implementation appDependencies.retrofitLiveAdapter
+    implementation appDependencies.calligraphy
+    implementation appDependencies.viewPump
     compileOnly appDependencies.glassfishAnnotation
 
     // dep injection
