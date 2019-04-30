@@ -1,6 +1,6 @@
 package com.aquidigital.techtestcv.api
 
-data class LinkJson(
+data class AppLink(
     val name: String,
     val url: String
 )

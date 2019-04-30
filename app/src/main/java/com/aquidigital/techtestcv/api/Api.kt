@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface Api {
 
     @GET("bins/ufagg")
-    fun getCv(): LiveData<Response<CvJson>>
+    fun getCv(): LiveData<Response<CV>>
 }

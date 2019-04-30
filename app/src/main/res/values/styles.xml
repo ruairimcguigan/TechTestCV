@@ -20,20 +20,14 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
-    <style name="Typography.Body1" parent="@style/Base.TextAppearance.AppCompat.Body1">
-        <item name="android:textSize">@dimen/app_text_body1</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:lineSpacingExtra">@dimen/app_text_body1_spacing</item>
-    </style>
-
-    <style name="Typography.Medium" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textSize">@dimen/app_text_medium</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-    </style>
-
-    <style name="Typography.H5" parent="@style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textSize">@dimen/app_text_h5</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    <style name="LinkButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/app_link_background_rounded</item>
+        <item name="android:minWidth">@dimen/app_button_min_width</item>
+        <item name="android:minHeight">@dimen/app_button_min_height</item>
+        <item name="android:paddingStart">@dimen/app_button_horizontal_padding</item>
+        <item name="android:paddingEnd">@dimen/app_button_horizontal_padding</item>
+        <item name="android:textSize">@dimen/app_button_link_text_size</item>
+        <item name="android:textColor">@color/app_text_inverted_color</item>
     </style>
 
 </resources>

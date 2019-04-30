@@ -1,8 +1,8 @@
 package com.aquidigital.techtestcv.api
 
-data class XpJson(
+data class Experience(
     val title: String,
     val dateRange: String,
     val description: String,
-    val links: List<LinkJson>
+    val appLinks: List<AppLink>
 )

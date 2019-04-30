@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_16">
+
+    <TextView
+            android:id="@+id/experienceTitleLabel"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/experience_title_font_size"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/grid_16"
+            android:layout_marginEnd="@dimen/grid_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Just Eat - Android Developer"/>
+
+    <TextView
+            android:id="@+id/experienceSubtitleLabel"
+            android:fontFamily="@font/cabin"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/experience_subtitle_font_size"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="@dimen/grid_16"
+            android:layout_marginTop="@dimen/grid_4"
+            android:layout_marginRight="@dimen/grid_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/experienceTitleLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="November 2018 - May 2019"/>
+
+    <TextView
+            android:id="@+id/experienceDescriptionLabel"
+            android:fontFamily="@font/cabin"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/experience_description_font_size"
+            android:textColor="@color/grey2"
+            android:layout_marginStart="@dimen/grid_16"
+            android:layout_marginTop="@dimen/grid_4"
+            android:layout_marginEnd="@dimen/grid_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/experienceSubtitleLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Working within the Post Orders Experience chapter of the Android capability, taking requirements through to deployment..."/>
+
+    <com.aquidigital.techtestcv.ui.AppLinksViewGroup
+            android:id="@+id/experienceLinksViewGroup"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/grid_12"
+            android:layout_marginTop="@dimen/grid_8"
+            android:layout_marginEnd="@dimen/grid_12"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/experienceDescriptionLabel"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,8 @@
 package com.aquidigital.techtestcv.api
 
-data class CvJson(
+data class CV(
     val name: String,
     val title: String,
     val description: String,
-    val experience: List<XpJson>
+    val experience: List<Experience>
 )

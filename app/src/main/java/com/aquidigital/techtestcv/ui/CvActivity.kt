@@ -5,9 +5,15 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import com.aquidigital.techtestcv.R
+import dagger.android.AndroidInjection
 import kotlinx.android.synthetic.main.activity_cv.*
+import javax.inject.Inject
 
 class CvActivity : AppCompatActivity() {
+
+    @Inject lateinit var viewModelFactory: ViewModelFactory
+    @Inject lateinit var experienceAdapter: CvExperienceAdapter
+
     private val mHideHandler = Handler()
     private val mHidePart2Runnable = Runnable {
         // Delayed removal of status and navigation bar
@@ -48,6 +54,8 @@ class CvActivity : AppCompatActivity() {
         setContentView(R.layout.activity_cv)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        AndroidInjection.inject(this)
+
         mVisible = true
 
         // Set up the user interaction to manually show or hide the system UI.
@@ -61,10 +69,6 @@ class CvActivity : AppCompatActivity() {
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
-
-        // Trigger the initial hide() shortly after the activity has been
-        // created, to briefly hint to the user that UI controls
-        // are available.
         delayedHide(100)
     }
 

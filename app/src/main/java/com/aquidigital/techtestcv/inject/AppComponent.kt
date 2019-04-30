@@ -3,6 +3,7 @@ package com.aquidigital.techtestcv.inject
 import android.app.Application
 import com.aquidigital.techtestcv.api.ApiConfig
 import com.aquidigital.techtestcv.api.ApiModule
+import com.aquidigital.techtestcv.ui.UiModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector

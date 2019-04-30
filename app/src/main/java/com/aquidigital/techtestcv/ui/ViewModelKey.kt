@@ -1,4 +1,4 @@
-package com.aquidigital.techtestcv.inject
+package com.aquidigital.techtestcv.ui
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

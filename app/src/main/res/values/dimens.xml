@@ -45,5 +45,17 @@
     <dimen name="app_text_medium">18sp</dimen>
     <dimen name="app_text_body1">14sp</dimen>
     <dimen name="app_text_body1_spacing">3sp</dimen>
+    <dimen name="experience_title_font_size">24sp</dimen>
+    <dimen name="experience_subtitle_font_size">18sp</dimen>
+    <dimen name="experience_description_font_size">14sp</dimen>
+
+    // button
+    <dimen name="app_button_min_width">116dp</dimen>
+    <dimen name="app_button_min_height">32dp</dimen>
+    <dimen name="app_button_horizontal_padding">8dp</dimen>
+
+    <dimen name="app_button_link_border_radius">3dp</dimen>
+    <dimen name="app_button_link_border_stroke">1dp</dimen>
+    <dimen name="app_button_link_text_size">12sp</dimen>
 
 </resources>
