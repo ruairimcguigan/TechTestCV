@@ -21,13 +21,9 @@
     </style>
 
     <style name="LinkButton" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:background">@drawable/app_link_background_rounded</item>
-        <item name="android:minWidth">@dimen/app_button_min_width</item>
-        <item name="android:minHeight">@dimen/app_button_min_height</item>
-        <item name="android:paddingStart">@dimen/app_button_horizontal_padding</item>
-        <item name="android:paddingEnd">@dimen/app_button_horizontal_padding</item>
-        <item name="android:textSize">@dimen/app_button_link_text_size</item>
-        <item name="android:textColor">@color/app_text_inverted_color</item>
+        <item name="android:drawableStart">@drawable/ic_view_app</item>
+        <item name="android:minWidth">@dimen/grid_36</item>
+        <item name="android:minHeight">@dimen/grid_36</item>
     </style>
 
 </resources>

@@ -15,11 +15,6 @@ class AppLinkButton @JvmOverloads constructor(
 
     lateinit var link: AppLink
 
-    fun populate(link: AppLink) {
-        this.link = link
-        text = link.name
-    }
-
     companion object {
         fun create(appLink: AppLink, context: Context): AppLinkButton {
             return with(
@@ -32,5 +27,10 @@ class AppLinkButton @JvmOverloads constructor(
                 this
             }
         }
+    }
+
+    fun populate(link: AppLink) {
+        this.link = link
+        text = link.name
     }
 }

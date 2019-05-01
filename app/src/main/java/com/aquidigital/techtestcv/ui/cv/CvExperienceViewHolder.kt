@@ -1,6 +1,8 @@
 package com.aquidigital.techtestcv.ui.cv
 
 import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import androidx.recyclerview.widget.RecyclerView
 import com.aquidigital.techtestcv.model.Experience
 import kotlinx.android.synthetic.main.experience_item_view.view.*
@@ -17,12 +19,11 @@ class CvExperienceViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         subTitle.text = experience.dateRange
         description.text = experience.description
 
-        // TODO to complete
-//        if (experience.appLinks.isNotEmpty()) {
-//            appLinksView.visibility = VISIBLE
-//            appLinksView.populate(experience.appLinks)
-//        } else {
-//            appLinksView.visibility = GONE
-//        }
+        if (experience.links.isNotEmpty()) {
+            appLinksView.visibility = VISIBLE
+            appLinksView.populate(experience.links)
+        } else {
+            appLinksView.visibility = GONE
+        }
     }
 }

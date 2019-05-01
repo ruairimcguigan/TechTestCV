@@ -4,5 +4,5 @@ data class Experience(
     val title: String,
     val dateRange: String,
     val description: String,
-    val appLinks: List<AppLink>
+    val links: List<AppLink>
 )

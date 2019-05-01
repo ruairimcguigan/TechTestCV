@@ -9,7 +9,7 @@
       "description": "Working within the Post Orders Experience chapter of the Android capability, taking requirements through to deployment",
       "links": [
         {
-          "name": "just-eat",
+          "name": "View on Play Store",
           "url": "https://play.google.com/store/apps/details?id=com.justeat.app.uk&hl=en_GB"
         }
       ]
@@ -20,7 +20,7 @@
       "description": "Working within a small team of two, released the Android flavour of an established London tour guide iOS application, 'Big Bus Tours', launched November 2018 ",
       "links": [
         {
-          "name": "big-bus-tours",
+          "name": "View on Play Store",
           "url": "https://play.google.com/store/apps/details?id=com.bigbustours.bbt"
         }
       ]
@@ -31,7 +31,7 @@
       "description": "Working within the Android capability providing spec implementation and support for the Clydesdale Banking Group core mobile banking applications. Responsibilities include: \n\n- Progressing the design of the solution as the requirements and technical landscape changes\n- Identifying, implementing or suggesting changes that improve capability to internal and external customers.",
       "links": [
         {
-          "name": "cbyb",
+          "name": "View on Play Store",
           "url": "https://play.google.com/store/apps/details?id=co.uk.youandb.android.b"
         }
       ]
@@ -42,7 +42,7 @@
       "description": "Working within the Android team assisting in the rewrite and relaunch of the Santander’s core mobile banking application. Responsibilities included:\n\n- Designing and developing code and tests using Mockito and Espresso.\n- Progressing the design of the solution as the requirements and technical landscape changes\n- Managing key risks, ensuring that an effective risk and control framework is in place within which to manage them.\n- Identifying, implementing or suggesting changes that improve service to internal and external customers.\n- Test driven and Behaviour driven development philosophies encouraged and practiced.",
       "links": [
         {
-          "name": "santander",
+          "name": "View on Play Store",
           "url": "https://play.google.com/store/apps/details?id=uk.co.santander.santanderUK"
         }
       ]
@@ -57,5 +57,8 @@
       "dateRange": "September 2014 - August 2016",
       "description": "Within Deloitte Digital, I assisted in developing mobile applications in a number of national projects, primarily contributing to a large retail banking client. Specialising in Android mobile development, I assisted with the delivery of a first to market, retail mobile banking product, working within a near and offshore team, used daily by several million customers."
     }
-  ]
+  ],
+  "stats": {
+    "yearsInIndustry": "6"
+  }
 }
