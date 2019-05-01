@@ -21,7 +21,7 @@
 
         <TextView
                 android:id="@+id/nameView"
-                android:text="Ruairi McGuigan"
+                tools:text="Ruairi McGuigan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_condensed_bold"
@@ -29,7 +29,7 @@
                 android:textColor="@color/black"/>
         <TextView
                 android:id="@+id/jobTitleView"
-                android:text="Android Developer"
+                tools:text="Android Developer"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
 
         <TextView
                 android:id="@+id/profileView"
-                android:text="This is my profile"
+                tools:text="This is my profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cabin"
@@ -67,7 +67,7 @@
             app:layout_constraintTop_toBottomOf="@+id/upperProfile"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <com.aquidigital.techtestcv.ui.CvRetryView
+    <com.aquidigital.techtestcv.ui.views.CvRetryView
             android:id="@+id/cv_activity_errorRetryView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

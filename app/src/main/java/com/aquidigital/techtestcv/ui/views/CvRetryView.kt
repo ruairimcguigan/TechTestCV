@@ -1,4 +1,4 @@
-package com.aquidigital.techtestcv.ui
+package com.aquidigital.techtestcv.ui.views
 
 import android.content.Context
 import android.util.AttributeSet

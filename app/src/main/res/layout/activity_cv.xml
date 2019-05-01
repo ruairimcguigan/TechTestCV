@@ -4,7 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:background="#fdeea6"
-             tools:context=".ui.CvActivity">
+             tools:context=".ui.cv.CvActivity">
 
     <include layout="@layout/content_cv"
              android:id="@+id/fullscreen_content"

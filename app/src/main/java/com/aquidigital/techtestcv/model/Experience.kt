@@ -1,4 +1,4 @@
-package com.aquidigital.techtestcv.api
+package com.aquidigital.techtestcv.model
 
 data class Experience(
     val title: String,

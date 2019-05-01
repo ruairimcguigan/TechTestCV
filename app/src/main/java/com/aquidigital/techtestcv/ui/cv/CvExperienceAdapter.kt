@@ -1,10 +1,10 @@
-package com.aquidigital.techtestcv.ui
+package com.aquidigital.techtestcv.ui.cv
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.aquidigital.techtestcv.R
-import com.aquidigital.techtestcv.api.Experience
+import com.aquidigital.techtestcv.model.Experience
 import javax.inject.Inject
 
 class CvExperienceAdapter @Inject constructor() : RecyclerView.Adapter<CvExperienceViewHolder>() {

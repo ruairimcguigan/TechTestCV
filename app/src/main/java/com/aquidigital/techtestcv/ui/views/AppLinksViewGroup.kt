@@ -1,10 +1,11 @@
-package com.aquidigital.techtestcv.ui
+package com.aquidigital.techtestcv.ui.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.LinearLayout
+import android.widget.LinearLayout.LayoutParams.*
 import com.aquidigital.techtestcv.R
-import com.aquidigital.techtestcv.api.AppLink
+import com.aquidigital.techtestcv.model.AppLink
 
 class AppLinksViewGroup @JvmOverloads constructor(
     context: Context,
@@ -13,7 +14,7 @@ class AppLinksViewGroup @JvmOverloads constructor(
 ): LinearLayout(context, attrs, defStyleAttr) {
 
     init {
-        orientation = LinearLayout.HORIZONTAL
+        orientation = HORIZONTAL
     }
 
     fun populate(links: List<AppLink>) {
@@ -21,9 +22,9 @@ class AppLinksViewGroup @JvmOverloads constructor(
         links.forEach { linksJson ->
             addView(with(AppLinkButton.create(linksJson, context)) {
                 layoutParams = kotlin.with(
-                    android.widget.LinearLayout.LayoutParams(
-                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
-                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT
+                    LayoutParams(
+                        WRAP_CONTENT,
+                        WRAP_CONTENT
                     )
                 ) {
                     marginEnd = context.resources.getDimensionPixelOffset(R.dimen.grid_8)

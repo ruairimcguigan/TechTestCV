@@ -51,7 +51,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Working within the Post Orders Experience chapter of the Android capability, taking requirements through to deployment..."/>
 
-    <com.aquidigital.techtestcv.ui.AppLinksViewGroup
+    <com.aquidigital.techtestcv.ui.views.AppLinksViewGroup
             android:id="@+id/experienceLinksViewGroup"
             android:layout_width="@dimen/match_parent"
             android:layout_height="wrap_content"

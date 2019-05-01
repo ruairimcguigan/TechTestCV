@@ -1,4 +1,4 @@
-package com.aquidigital.techtestcv.ui
+package com.aquidigital.techtestcv.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

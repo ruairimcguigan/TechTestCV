@@ -8,7 +8,7 @@ import com.aquidigital.techtestcv.StubInterceptor
 import com.aquidigital.techtestcv.api.ApiConfig
 import com.aquidigital.techtestcv.inject.DaggerAppComponent
 import com.aquidigital.techtestcv.inject.TestInjectApplication
-import com.aquidigital.techtestcv.ui.CvActivity
+import com.aquidigital.techtestcv.ui.cv.CvActivity
 import java.util.*
 
 class ActivityTestRule : ActivityTestRule<CvActivity>(

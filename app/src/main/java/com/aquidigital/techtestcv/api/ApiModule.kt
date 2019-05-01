@@ -2,8 +2,7 @@ package com.aquidigital.techtestcv.api
 
 import android.app.Application
 import com.aquidigital.techtestcv.R
-import com.github.leonardoxh.livedatacalladapter.LiveDataCallAdapterFactory
-import com.github.leonardoxh.livedatacalladapter.LiveDataResponseBodyConverterFactory
+import com.aquidigital.techtestcv.util.LiveDataCallAdapterFactory
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
@@ -47,8 +46,7 @@ internal object ApiModule {
         return Retrofit.Builder()
             .baseUrl(application.getString(R.string.api_url))
             .client(okHttpClient)
-            .addCallAdapterFactory(LiveDataCallAdapterFactory.create())
-            .addConverterFactory(LiveDataResponseBodyConverterFactory.create())
+            .addCallAdapterFactory(LiveDataCallAdapterFactory())
             .addConverterFactory(converterFactory)
             .build()
     }
