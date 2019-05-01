@@ -80,6 +80,23 @@ dependencies {
     androidTestImplementation appTestDependencies.junit
     androidTestImplementation appTestDependencies.mockito
     androidTestImplementation appTestDependencies.mockitoAndroid
+    androidTestImplementation appTestDependencies.espressoCore
+    androidTestImplementation appTestDependencies.androidXJunit
+    androidTestImplementation appTestDependencies.androidXCore
+
+//    testImplementation 'org.mockito:mockito-core:2.10.0'
+//    testImplementation 'com.jraska.livedata:testing-ktx:1.1.0'
+//
+//    implementation 'androidx.annotation:annotation:1.0.2'
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+//    implementation 'androidx.lifecycle:lifecycle-livedata-core:2.0.0'
+//
+//    testImplementation 'junit:junit:4.12'
+//    testImplementation 'androidx.arch.core:core-testing:2.0.0'
+//    testImplementation 'org.assertj:assertj-core:3.11.1'
+//
+//    testImplementation 'org.mockito:mockito-core:2.18.3'
+//    testImplementation 'com.nhaarman:mockito-kotlin:1.5.0'
 
     androidTestImplementation(appTestDependencies.androidRunner) {
         exclude group: 'com.android.support', module: 'support-annotations'

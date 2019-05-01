@@ -50,12 +50,24 @@
     {
       "title": "Allstate Insurance Corp, (Contract)",
       "dateRange": "August 2016 - February 2017",
-      "description": "Design and implementation of efficient and stable functionality according to specifications"
+      "description": "Design and implementation of efficient and stable functionality according to specifications",
+      "links": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
     },
     {
       "title": "Deloitte Digital",
       "dateRange": "September 2014 - August 2016",
-      "description": "Within Deloitte Digital, I assisted in developing mobile applications in a number of national projects, primarily contributing to a large retail banking client. Specialising in Android mobile development, I assisted with the delivery of a first to market, retail mobile banking product, working within a near and offshore team, used daily by several million customers."
+      "description": "Within Deloitte Digital, I assisted in developing mobile applications in a number of national projects, primarily contributing to a large retail banking client. Specialising in Android mobile development, I assisted with the delivery of a first to market, retail mobile banking product, working within a near and offshore team, used daily by several million customers.",
+      "links": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
     }
   ],
   "stats": {

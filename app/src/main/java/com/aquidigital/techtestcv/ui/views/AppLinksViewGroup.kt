@@ -23,21 +23,23 @@ class AppLinksViewGroup @JvmOverloads constructor(
     fun populate(links: List<AppLink>) {
         removeAllViews()
         links.forEach { linksJson ->
-            addView(with(AppLinkButton.create(linksJson, context)) {
-                layoutParams = with(
-                    LayoutParams(
-                        WRAP_CONTENT,
-                        WRAP_CONTENT
-                    )
-                ) {
-                    marginEnd = context.resources.getDimensionPixelOffset(R.dimen.grid_8)
+            if(linksJson.url.isNotEmpty()) {
+                addView(with(AppLinkButton.create(linksJson, context)) {
+                    layoutParams = with(
+                        LayoutParams(
+                            WRAP_CONTENT,
+                            WRAP_CONTENT
+                        )
+                    ) {
+                        marginEnd = context.resources.getDimensionPixelOffset(R.dimen.grid_8)
+                        this
+                    }
+                    setOnClickListener {
+                        openAppLink(links.first().url)
+                    }
                     this
-                }
-                setOnClickListener {
-                    openAppLink(links.first().url)
-                }
-                this
-            })
+                })
+            }
         }
     }
 

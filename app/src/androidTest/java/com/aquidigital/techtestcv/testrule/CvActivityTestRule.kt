@@ -11,7 +11,7 @@ import com.aquidigital.techtestcv.inject.TestInjectApplication
 import com.aquidigital.techtestcv.ui.cv.CvActivity
 import java.util.*
 
-class ActivityTestRule : ActivityTestRule<CvActivity>(
+class CvActivityTestRule : ActivityTestRule<CvActivity>(
     CvActivity::class.java,
     true,
     false
